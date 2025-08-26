@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" >
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+<style>
+
+.navbar-brand {
+  outline: none;
+  box-shadow: none;
+}
+.navbar_collapse .nav-link{
+  color: black !important;
+}
+.leftimgs{
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    
+}
+.perfume{
+    position: relative;
+    display: inline;
+}
+.icons{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.card {
+    transition: border-radius 0.3s ease-in-out;
+}
+
+.card:hover {
+    border-top-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-top-right-radius: 70px !important;
+    border-bottom-left-radius: 70px !important;
+}
+
+
+
+
+
+
+
+
+footer{
+  background-color: rgb(58, 109, 146);
+}
+@media (max-width: 768px){
+ 
+
+
+footer{
+    text-align: center;
+  }
+}
+
+
+</style>
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow" >
+  <div class="container-fluid p-3">
+    <a class="navbar-brand fw-bold ps-md-5 pe-3" href="index.html" style="color: rgb(11, 60, 93); font-size:30px; ">Fragranzia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mt-2 mb-lg-0" style="padding-left: 600px;" >
+              <li class="nav-item ">
+                <a class="nav-link fw-semibold ps-4" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold ps-4" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold ps-4" href="#">Gifting</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold ps-4 me-2 active"  style="color:rgba(6, 37, 74, 0.797); font-weight:bold ;" aria-current="page"  href="./about.html">About</a>
+              </li>
+        </ul>
+
+        <div class="d-flex align-items-center flex-wrap ms-2 me-3 my-2 my-lg-0">
+            <form class="d-flex me-2"  >
+              <div class="position-relative ">
+                <i class="fa-solid fa-magnifying-glass position-absolute m-3 " style=" transform: translateY(-50%); color: #616466; "></i>
+                <input class="form-control ps-5 border text-secondary shadow-sm" style="border-radius:30px; max-width: 300px;" type="search" placeholder="Search Here" aria-label="Search">
+              </div>  
+            </form>
+
+            <a class="nav-link me-1" href="#">
+              <span class="d-inline-flex align-items-center justify-content-center bg-light border shadow-sm rounded-circle" style="width: 40px; height: 40px;">
+                  <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+              </span>
+            </a>
+            
+            <a class="nav-link ms-1" href="#">
+                <span class="d-inline-flex align-items-center justify-content-center bg-light border shadow-sm rounded-circle" style="width: 40px; height: 40px;">
+                    <i class="fa-solid fa-bell" style="color: #000000;"></i>
+                </span>
+            </a>
+
+            <a class="nav-link ms-2" href="#">
+                <span class="d-inline-flex align-items-center justify-content-center bg-light border shadow-sm rounded-circle" style="width: 40px; height: 40px;">
+                    <i class="fa-solid fa-user" style="color: #000000;"></i>
+                </span>
+            </a>
+      </div>
+
+        </div>
+  </div>
+</nav>
+<!-- navbar end-------------------------------------------------------------------------------------- -->
+
+<div class="container-fluid ">
+    <div class="row">
+        <div class="col-md-4 d-flex ms-5">
+            <div class="leftimgs d-flex flex-column mt-5 gap-2">
+            <img src="./images/AUTOGRAPH_EDP_100ML_1.png" style="border: 1px solid #000000;" alt="img">
+            <img src="./images/AUTOGRAPH_EDP_100ML_3.png" style="border: 1px solid #000000;" alt="img">
+            <img src="./images/AUTOGRAPH_EDP_100ML-_5.png" style="border: 1px solid #000000;" alt="img">
+            </div>
+            <div class="perfume mt-5">
+                <img src="./images/perfume.png" style="width: 100%;">
+                 <div class="icons">
+                    <i class="fa-regular fa-heart fa-2x ms-2"></i>
+                    <i class="fas fa-share-alt fa-2x ms-2 mt-3"></i>
+                 </div>
+                <div class="d-grid gap-3">
+                    <button class="btn btn-outline-primary text-light" style="background-color :#102C57; width: 100%; padding: 12px; font-weight: bold;">Purchase Now</button>
+                    <button class="btn btn-outline-primary text-dark" style="width: 100%; padding: 12px; font-weight: bold;">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-7 mt-5 ms-5">
+            <div class=" d-flex justify-content-between align-items-center">
+                <h2 class="mb-0">Autograph eau de parfum 100ml for men!</h2>
+               
+            </div>
+            <p>Autograph</p>
+            <div class="d-flex align-items-center mb-3">
+                <span class="badge bg-success me-2">4.5<i class="fa-regular fa-star"></i></span>
+                <span class="text-muted">1,000 Ratings</span>
+            </div>
+            <p class="text-danger fw-bold">Hurry! only few stock left!</p>
+            <div>
+            <h1>Rs 899 <span class="strike" style="font-size: 20px; text-decoration: line-through;"> Rs 2000 </span><span class="text-success ps-1" style="font-size: 20px; "> 61% off</span></h1>
+            </div>
+            <div class="d-flex align-items-center mt-3 mb-3" >
+                <div class="input-group" style="width: 130px; border: 3px solid black;">
+                    <button class="btn btn-light" >-</button>
+                    <input type="text" class="form-control text-center" value="1">
+                    <button class="btn btn-light">+</button>
+                </div>
+            </div>
+            
+            <h5>Delivery</h5>
+            <p style="line-height: 1.3;">Delivery by 28 Aug, Wednesday | Free<br>if ordered before 9:24 PM</p>
+            <h5>Description</h5>
+            <p>This fragrance exudes a confident and enigmatic personality. Its composition features a top note of lemon and mandarin with a twist of apple that enhances the freshness. The heart reveals a warm blend of high-grade lavender and a hint of cinnamon, beautifully wrapped in patchouli, musk, and vanilla to ensure a powerful and flowing scent.</p>
+            <h5>Available Offers</h5>
+            <p><i class="fa-solid fa-tag" style="color: #1a8e37;"></i> Buy two of the same product and get a third one free.</p>
+            <p><i class="fa-solid fa-tag" style="color: #1a8e37;"></i> Enjoy free standard shipping on orders exceeding ₹1,399.</p>
+            <p><i class="fa-solid fa-tag" style="color: #1a8e37;"></i> Get 15% off your first order</p>
+            <p><i class="fa-solid fa-tag" style="color: #1a8e37;"></i> Receive a free tool case with the purchase of any perfume over ₹2,000</p>
+            
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="d-flex justify-content-between align-items-center mb-3">
+<h3 class="ms-4">Suggested for you</h3>
+<div>
+    <span><i class="fa-solid fa-angle-left"></i></span>
+    <span><i class="fa-solid fa-angle-right"></i></span>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+</div>
+
+
+
+<div class="container-fluid mt-5">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+<div class="container-fluid mt-5 d-flex gap-3">
+    <div class="card border shadow" style="width: 600px;border-top-left-radius: 70px; border-bottom-right-radius: 70px; overflow: hidden;">
+        <img src="./images/dubaiperfum.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+    <div class="card border shadow" style="width: 600px;border-top-left-radius: 70px; border-bottom-right-radius: 70px; overflow: hidden;">
+        <img src="./images/royal.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+    <div class="card border shadow" style="width: 600px;border-top-left-radius: 70px; border-bottom-right-radius: 70px; overflow: hidden;">
+        <img src="./images/blueprfum.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+    <div class="card border shadow" style="width: 600px;border-top-left-radius: 70px; border-bottom-right-radius: 70px; overflow: hidden;">
+        <img src="./images/blackprfum.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+    <div class="card border shadow" style="width: 600px;border-top-left-radius: 70px; border-bottom-right-radius: 70px; overflow: hidden;">
+        <img src="./images/perfume.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+</div>
+</div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+ <!-- footer---------------------------------------------------------------------------------------------------- -->
+
+ <footer class="pt-5 mt-4">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 pt-5 ps-5" style="color: rgb(3, 47, 108);">
+        <h1 class="fw-bold">Fragranzia</h1>
+      </div>
+
+    <div class="col-md-2 text-dark">
+      <h4 class="fw-bold ps-4 pb-3">Pages</h4>
+      <ul style="list-style: none;">
+
+        <li><a href="./index.html" style="color: #000000; text-decoration: none;">Home</a></li>
+        <li><a href="" style="color: #000000; text-decoration: none;">Products</a></li>
+        <li><a href="" style="color: #000000; text-decoration: none;">Gifting</a></li>
+        <li><a href="/about.html" style="color: #000000; text-decoration: none;">About</a></li>
+        <li><a href="" style="color: #000000; text-decoration: none;">Profile</a></li>
+
+      </ul> 
+    </div>
+
+    <div class="col-md-3 text-dark ">
+      <h4 class="fw-bold ps-4 pb-3">Quick Links</h4>
+      <ul style="list-style: none;">
+
+        <li><a href="" style="color: #000000; text-decoration: none;">Privacy Policy</a></li>
+        <li><a href="" style="color: #000000; text-decoration: none;">Terms and Conditions</a></li>
+        <li><a href="" style="color: #000000; text-decoration: none;">FAQs</a></li>
+        <li><a href="" style="color: #000000; text-decoration: none;">Customer Services</a></li>
+
+      </ul>
+    </div>
+    
+    <div class="col-md-3">
+      <p><i class="fa-regular fa-envelope"></i> ftrafurniture@gamil.com </p>
+      <p><i class="fa-solid fa-phone"></i> +91 9876543210</p>
+       <h4 class="fw-bold">Social Media</h4>
+       <i class="fa-brands fa-instagram"></i>
+       <i class="fa-brands fa-facebook-f"></i>
+       <i class="fa-brands fa-x-twitter"></i>
+       <i class="fa-brands fa-youtube"></i>
+       <i class="fa-brands fa-linkedin"></i>
+    </div>
+
+    </div>
+  </div>
+  
+  <div class="row mt-2 pt-3" style="border-top: 3px solid black;">
+    <div class="col-md-2 ps-4">
+      <p>Web acccesibility</p>
+    </div>
+    <div class="col-md-2">
+      <p>Term of use</p>
+    </div>
+     <div class="col-md-2">
+      <p>Privacy Statement</p>
+    </div>
+     <div class="col-md-2">
+      <p>Contact Us</p>
+    </div>
+     <div class="col-md-3 text-end">
+      <p>@ 2024 Fragranzia Company. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+    
+</body>
+</html>

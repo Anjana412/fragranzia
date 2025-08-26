@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fragranzia</title>
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<style>
+.navbar-brand {
+  outline: none;
+  box-shadow: none;
+}
+.navbar_collapse .nav-link{
+  color: black !important;
+}
+.carousel-box{
+  border-radius: 15px;
+  overflow: hidden;
+  max-height: 500px;
+}
+
+.carousel-content {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+.card-responsive-image {
+            height: 100%;
+            object-fit: cover;
+}
+
+
+
+/* ------------------------- */
+footer{
+  background-color: rgb(58, 109, 146);
+  
+  
+}
+
+</style>
+</head>
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow" >
+  <div class="container-fluid p-3">
+    <a class="navbar-brand fw-bold ps-md-5 pe-3" href="index.html" style="color: rgb(11, 60, 93); font-size:30px; ">Fragranzia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mt-2 mb-lg-0" style="padding-left: 600px;" >
+              <li class="nav-item ">
+                <a class="nav-link  active" style="color:rgba(6, 37, 74, 0.797); font-weight:bold ;" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold ps-4" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold ps-4" href="#">Gifting</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold ps-4 me-2" href="./about.html">About</a>
+              </li>
+        </ul>
+
+      <div class="d-flex align-items-center flex-wrap ms-2 me-3 my-2 my-lg-0">
+            <form class="d-flex me-2"  >
+              <div class="position-relative ">
+                <i class="fa-solid fa-magnifying-glass position-absolute m-3 " style=" transform: translateY(-50%); color: #616466; "></i>
+                <input class="form-control ps-5 border text-secondary shadow-sm" style="border-radius:30px; max-width: 300px;" type="search" placeholder="Search Here" aria-label="Search">
+              </div>  
+            </form>
+
+            <a class="nav-link me-1" href="#">
+              <span class="d-inline-flex align-items-center justify-content-center bg-light border shadow-sm rounded-circle" style="width: 40px; height: 40px;">
+                  <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+              </span>
+            </a>
+            
+            <a class="nav-link ms-1" href="#">
+                <span class="d-inline-flex align-items-center justify-content-center bg-light border shadow-sm rounded-circle" style="width: 40px; height: 40px;">
+                    <i class="fa-solid fa-bell" style="color: #000000;"></i>
+                </span>
+            </a>
+
+            <a class="nav-link ms-2" href="#">
+                <span class="d-inline-flex align-items-center justify-content-center bg-light border shadow-sm rounded-circle" style="width: 40px; height: 40px;">
+                    <i class="fa-solid fa-user" style="color: #000000;"></i>
+                </span>
+            </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid text-center text-light fw-semibold p-3" style="max-height: 300px; background-color: rgb(11, 60, 93);">
+    <h4>ENJOY FESTIVE DISCOUNT! FREE SHIPPING ABOVE 999!</h4>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="carouselExampleAutoplaying" class="carousel slide mt-5" data-bs-ride="carousel" style="position: relative;">
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-color: rgb(11, 60, 93); position: relative; background-image: url(./images/taj.png);background-size: cover;background-position: center;background-repeat: no-repeat;border-radius: 20px;width:1300px;margin-left: 200px;height: 340px;padding: 40px;max-width:  1700px;">
+
+        <div class="container py-5 position-relative">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <h3 class="fw-bold" style="color: white;">Discover perfumes that<br>celebrate individuality</h3>
+              <p class="mt-3" style="color: white;">Every moment with an unforgettable essence.</p>
+              <button type="button" class="btn btn-light" style="width: 130px;">Shop Now</button>
+            </div>
+            <div class="col-md-6">
+               <div style="position: absolute; top: 50%; left: 50%; ">
+                <img src="./images/blue_l.png" style="position: absolute; margin-top: -150px;margin-bottom: 40px; margin-left: 200px; width: 310px; transform: rotate(-1deg);">
+                <img src="./images/blue_ri.png" style="position: absolute; margin-top: -110px;margin-bottom: 60px; margin-left: 330px; width: 250px; transform: rotate(-1deg);">
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-color: rgb(212, 160, 23);position: relative;background-image: url(./images/taj.png);background-size: cover;background-position: center;background-repeat: no-repeat;border-radius: 20px;width: 1300px;margin-left: 200px;height: 340px;padding: 40px;max-width: 1700px;">
+        <div class="container py-5 position-relative">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+                <h3 class="fw-bold" style="color: white; font-family: sans-serif;" >Discover perfumes that<br>celebrate individuality</h3>
+              <p class="mt-3" style="color: white;">Every moment with an unforgettable essence.</p>
+              <button type="button" class="btn btn-light" style="width: 130px;">Shop Now</button>
+            </div>
+               <div style="position: absolute; top: 50%; left: 50%; ">
+                <img src="./images/ornge-l.png" style="position: absolute; margin-top: -150px;margin-bottom: 40px; margin-left: 200px; width: 310px; transform: rotate(-1deg);">
+                <img src="./images/ornge-r.png" style="position: absolute; margin-top: -110px;margin-bottom: 60px; margin-left: 330px; width: 250px; transform: rotate(-1deg);">
+               </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="carousel-indicators mb-4">
+      <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+   </div>
+     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<!-- <div class="container-fluid mt-5 mb-5- p-0 px-md-5">
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-box mt-4t h-100">
+          <div class="carousel-inner ">
+              <div class="carousel-item active" style="background-color:rgb(11, 60, 93); height: 100%;">
+                  <div class="carousel-content text-light">
+                  <h2 class="ps-5 fw-bold" style=" font-size: 45px;">Discover perfumes that<br>celebrate individuality</p>
+                  <p class="fs-6 fs-md-5">Every moment with an unforgettable<br>essence.</p>
+                  <a href="" class="btn btn-light  mt-3 fw-semibold" style="max-width: 150px; max-height: 50px; border-color: #000000;">Shop Now</a>
+                </div>
+                <img src="./images/taj.png" class="img-fluid mx-auto d-block w-100 h-100" alt="..."  style="object-fit: cover;">
+              </div>
+
+          <div class="col-md-6">
+               <div style="position: absolute; top: 50%; left: 50%; ">
+                <img src="./images/blue_l.png" style="position: absolute; margin-top: -150px;margin-bottom: 40px; margin-left: 200px; width: 310px; transform: rotate(-1deg);">
+                <img src="./images/blue_l.png" style="position: absolute; margin-top: -110px;margin-bottom: 60px; margin-left: 330px; width: 250px; transform: rotate(-1deg);">
+               </div>
+            </div>
+            <div class="carousel-item" style="background-color:rgb(172, 117, 16); height: 100%;">
+              <div class="carousel-content text-light">
+               <h2 class="ps-5 fw-bold" style=" font-size: 45px;">Discover perfumes that<br>celebrate individuality</p>
+                  <p class=" fs-6 fs-md-5">Every moment with an unforgettable<br>essence.</p>
+                  <a href="" class="btn btn-light mt-3 fw-semibold" style="max-width: 150px; max-height: 50px; border-color: #000000;">Shop Now</a>
+                </div>
+                <img src="./images/taj.png" class="img-fluid mx-auto d-block w-100 h-100" alt="..."  style="object-fit: cover;">
+              </div>
+            <div class="col-md-6">
+               <div style="position: absolute; top: 50%; left: 50%; ">
+                <img src="./images/ornge-l.png" style="position: absolute; margin-top: -150px;margin-bottom: 40px; margin-left: 200px; width: 310px; transform: rotate(-1deg);">
+                <img src="./images/ornge-r.png" style="position: absolute; margin-top: -110px;margin-bottom: 60px; margin-left: 330px; width: 250px; transform: rotate(-1deg);">
+               </div>
+            </div>
+        </div>
+
+    <div class="carousel-indicators mb-4">
+    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+   
+  </div>
+</div> -->
+
+
+    <!-- <div class="container-fluid mt-5 mb-5 px-3 px-md-5">
+        <div class="row g-4 justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div class="card flex-grow-1 border-0" style="background-color: rgb(243, 238, 232);">
+                    <div class="d-flex flex-column flex-md-row align-items-center h-100">
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold"><span>Unlock Exclusive</span><br><span>Offers</span></h3>
+                            <p class="card-text">Discover special deals tailored just for you</p>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <img src="./images/orngspray_c.png" class="img-fluid rounded-end card-responsive-image" alt="Exclusive Offers">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div class="card flex-grow-1 border-0" style="background-color: rgb(243, 238, 232);">
+                    <div class="card-body d-flex flex-column align-items-center text-center">
+                        <h3 class="card-title fw-bold">Gift a Scent to your loved one.</h3>
+                        <p class="card-text">Make your love more beautiful.</p>
+                        <img src="./images/blackspray.png" class="img-fluid object-fit-cover mt-3" alt="Gifting Scents">
+                    </div>
+                </div>
+            </div>
+
+          
+
+   <div class="col-12 col-md-6 col-lg-4 d-flex">
+   <div class="card flex-grow-1 border-0" style="background-color: rgb(243, 238, 232);">
+    <div class="d-flex flex-column flex-md-row align-items-center h-100">
+      <div class="card-body">
+        <h3 class="card-title fw-bold">
+          <span>Luxury Scents</span><br><span>Starting at ₹4,000</span>
+        </h3>
+        <p class="card-text">Discover special deals tailored just for you</p>
+
+        <div class="row align-items-center mt-3">
+          <div class="col-12 position-relative text-center mb-3 mb-md-0">
+            <img src="./images/Star 1.png" class="img-fluid" alt="Luxury Scents" style="max-width: 150px; margin-left: -200px;" />
+                <span class="position-absolute top-50  text-light fw-semibold" style=" margin-left: -60px; font-size: 20px; transform: translate(-50%, -50%) rotate(-20deg);">
+                  Shop Now
+                </span>
+
+                <div class="col-md-6 position-relative">
+                <img src="./images/pinkspray.png" class="position-absolute bottom-0 img-fluid object-fit-cover justify-content-center rounded" style="margin-left:30px;max-width: 350px;">
+              </div>
+      
+           </div>
+        
+        </div>
+
+     
+
+
+
+    </div>
+  </div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid mt-5 gap-3 d-flex flex-wrap justify-content-start" style="padding-left: 20px; padding-bottom: 40px;margin-top: 1px;">
+  <div class="card" style="width: 470px; max-width: 600px;height: 200px; background-color: #e7e7e7; border-radius: 15px;">
+    <div class="row g-0 align-items-center">
+      <div class="col-6">
+        <div class="card-body">
+          <h5 class="card-title fw-bold" style="font-size: 1.1rem;line-height: 1.3;">Unlock Exclusive Offers</h5>
+          <p class="card-text" style="max-width: 250%; font-size: 0.9rem;">Discover special deals tailored just for you!</p>
+        </div>
+      </div>
+      <div class="col-6 d-flex justify-content-center">
+        <img src="images/orngspray_c.png" class="img-fluid p-2" alt="Offer" style="max-height: 200px;">
+      </div>
+    </div>
+  </div>
+
+  <div class="card d-flex flex-column justify-content-between" style="width: 470px; max-width: 600px;height: 200px; background-color: #e7e7e7; border-radius: 15px; margin-left: 40px;overflow: hidden;">
+      <div class="col-12">  
+        <div class="card-body text-center p-2">
+          <h5 class="card-title fw-bold mb-1" style="font-size: 1.1rem;line-height: 1.3;padding-top: 20px;">Gift a Scents to your loved one.  </h5>
+          <p class="card-text" style="max-width: 250%; font-size: 0.9rem;">Make your love more beautiful</p>
+        </div>
+      <div class="col-12 d-flex justify-content-center">
+        <img src="./images/blackspray.png" class="img-fluid " alt="Offer" style="max-height: 130px;margin-top: -20px; display: block;">
+      </div>
+    </div>
+  </div>
+  
+  <div class="card d-flex flex-column justify-content-between" style="width: 470px; max-width: 600px;height: 200px; background-color: #e7e7e7; border-radius: 15px; margin-left: 40px;overflow: hidden;">
+      <div class="col-12">  
+        <div class="card-body  p-2">
+          <h5 class="card-title fw-bold mb-1" style="font-size: 1.1rem;line-height: 1.3;padding-top: 20px; padding-left: 20px;">Luxury Scents <br>Starting at ₹4000  </h5>
+          <p class="card-text" style="max-width: 250%; font-size: 0.9rem;">Make your love more beautiful</p>
+        </div>
+      <div class="col-12 d-flex justify-content-center">
+        <img src="./images/pinkspray.png" class="img-fluid " alt="Offer" style="max-height: 130px;margin-top: -20px;margin-left: 70px; display: block;">
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+
+       
+        </div>
+    </div>
+
+
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<footer class=" p-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3" style="color: rgb(3, 47, 108);">
+        <h1 class="fw-bold">Fragranzia</h1>
+      </div>
+
+    <div class="col-md-2 text-dark">
+      <h4 class="fw-bold">Pages</h4>
+      <ul style="list-style: none;">
+
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="">Products</a></li>
+        <li><a href="">Gifting</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="">Profile</a></li>
+
+      </ul> 
+    </div>
+
+    <div class="col-md-3 text-dark ">
+      <h4 class="fw-bold">Quick Links</h4>
+      <ul style="list-style: none;">
+
+        <li><a href="" >Privacy Policy</a></li>
+        <li><a href="">Terms and Conditions</a></li>
+        <li><a href="">FAQs</a></li>
+        <li><a href="">Customer Services</a></li>
+
+      </ul>
+    </div>
+    
+    <div class="col-md-3">
+      <p><i class="fa-regular fa-envelope"></i> ftrafurniture@gamil.com </p>
+      <p><i class="fa-solid fa-phone"></i> +91 9876543210</p>
+       <h4>Social Media</h4>
+       <i class="fa-brands fa-instagram"></i>
+       <i class="fa-brands fa-facebook-f"></i>
+       <i class="fa-brands fa-x-twitter"></i>
+       <i class="fa-brands fa-youtube"></i>
+       <i class="fa-brands fa-linkedin"></i>
+    </div>
+
+    </div>
+  </div>
+  
+  <div class="row mt-2 pt-3" style="border-top: 3px solid black;">
+    <div class="col-md-2">
+      <p>Web acccesibility</p>
+    </div>
+    <div class="col-md-2">
+      <p>Term of use</p>
+    </div>
+     <div class="col-md-2">
+      <p>Privacy Statement</p>
+    </div>
+     <div class="col-md-2">
+      <p>Contact Us</p>
+    </div>
+     <div class="col-md-3 text-end">
+      <p>@ 2024 Fragranzia Company. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
