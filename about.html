@@ -8,20 +8,28 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
 <style>
-  .navbar-brand {
-  outline: none;
-  box-shadow: none;
-}
-.navbar_collapse .nav-link{
-  color: black !important;
-}
-img{
-  width: 100%;
-  max-width: 400px;
-  border-radius: 20px;
-  margin: 10px;
-  display: block;
-}
+  navbar-brand {
+    outline: none;
+    box-shadow: none;
+  }
+  img {
+    max-width: 400px;
+    margin: 10px;
+    display: block;
+  }
+
+  .img1 {
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px; 
+  }
+  .img1,
+  .col-lg-6 img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+
 footer{
   background-color: rgb(58, 109, 146);
 }
@@ -30,9 +38,6 @@ footer{
 @media (max-width: 768px){
   h1{
     font-size: 1.8rem;
-  }
-  .breadcrump{
-    font-size: 0.9rem;
   }
   .img1 {
     margin-top: 0;  
@@ -46,59 +51,54 @@ footer{
 </head>
 <body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow" >
-  <div class="container-fluid p-3">
-    <a class="navbar-brand fw-bold ps-md-5 pe-3" href="index.html" style="color: rgb(11, 60, 93); font-size:30px; ">Fragranzia</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+ <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+        <div class="container-fluid p-3">
+            <a class="navbar-brand fw-bold ps-md-5 pe-md-3" href="./index.html" style="color: rgb(11, 60, 93); font-size: clamp(24px, 5vw, 30px);">Fragranzia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0" >
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" style="color: rgba(6, 37, 74, 0.797);" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold ps-4" href="./products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold ps-4" href="#">Gifting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold ps-4" href="./about.html">About</a>
+                    </li>
+                </ul>
 
-    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mt-2 mb-lg-0" style="padding-left: 600px;" >
-              <li class="nav-item ">
-                <a class="nav-link fw-semibold ps-4" href="./index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-semibold ps-4" href="#">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-semibold ps-4" href="#">Gifting</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-bold ps-4 me-2 active"  style="color:rgba(6, 37, 74, 0.797); font-weight:bold ;" aria-current="page"  href="./about.html">About</a>
-              </li>
-        </ul>
-
-        <div class="d-flex align-items-center flex-wrap ms-2 me-3 my-2 my-lg-0">
-            <form class="d-flex me-2"  >
-              <div class="position-relative ">
-                <i class="fa-solid fa-magnifying-glass position-absolute m-3 " style=" transform: translateY(-50%); color: #616466; "></i>
-                <input class="form-control ps-5 border text-secondary shadow-sm" style="border-radius:30px; max-width: 300px;" type="search" placeholder="Search Here" aria-label="Search">
-              </div>  
-            </form>
-
-            <a class="nav-link me-1" href="#">
-              <span class="d-inline-flex align-items-center justify-content-center bg-light border shadow-sm rounded-circle" style="width: 40px; height: 40px;">
-                  <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
-              </span>
-            </a>
-            
-            <a class="nav-link ms-1" href="#">
-                <span class="d-inline-flex align-items-center justify-content-center bg-light border shadow-sm rounded-circle" style="width: 40px; height: 40px;">
-                    <i class="fa-solid fa-bell" style="color: #000000;"></i>
-                </span>
-            </a>
-
-            <a class="nav-link ms-2" href="#">
-                <span class="d-inline-flex align-items-center justify-content-center bg-light border shadow-sm rounded-circle" style="width: 40px; height: 40px;">
-                    <i class="fa-solid fa-user" style="color: #000000;"></i>
-                </span>
-            </a>
-      </div>
-
+                <div class="d-flex align-items-center flex-wrap ms-4 me-3 my-2 my-lg-0">
+                    <form class="d-flex me-2">
+                        <div class="position-relative">
+                            <i class="fa-solid fa-magnifying-glass position-absolute" style="top: 50%; left: 1rem; transform: translateY(-50%); color: #616466;"></i>
+                            <input class="form-control ps-5 border text-secondary shadow-sm" style="border-radius: 30px; max-width: 300px;" type="search" placeholder="Search Here" aria-label="Search">
+                        </div>
+                    </form>
+                    <a class="nav-link ms-2 " href="./cart.html">
+                        <span class="d-inline-flex align-items-center justify-content-center bg-light border shadow-sm rounded-circle" style="width: 40px; height: 40px;">
+                            <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+                        </span>
+                    </a>
+                    <a class="nav-link ms-2" href="#">
+                        <span class="d-inline-flex align-items-center justify-content-center bg-light border shadow-sm rounded-circle" style="width: 40px; height: 40px;">
+                            <i class="fa-solid fa-bell" style="color: #000000;"></i>
+                        </span>
+                    </a>
+                    <a class="nav-link ms-2" href="./signup.html">
+                        <span class="d-inline-flex align-items-center justify-content-center bg-light border shadow-sm rounded-circle" style="width: 40px; height: 40px;">
+                            <i class="fa-solid fa-user" style="color: #000000;"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
         </div>
-  </div>
-</nav>
+    </nav>
 <!-- navbar end---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 <div>
 <div class="container-fluid ps-5 pt-4 fw-semibold">
@@ -122,16 +122,10 @@ footer{
       </p>
       </div>
 
-      <div class="col-lg-6 text-center">
-        <!-- <div class="row"> -->
-          <!-- <div class="col-12"> -->
-            <img src="./images/mn.png" class="img1" style="border-top-left-radius: 100px; border-bottom-right-radius: 100px; ">
-          <!-- </div> -->
-          <!-- <div class="col-12"> -->
-            <img src="./images/wm.png" style="border-top-right-radius: 100px; border-bottom-left-radius: 100px;">
-          <!-- </div> -->
-        <!-- </div> -->
-      </div>
+      <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center">
+        <img src="./images/mn.png" class="img1 img-fluid">
+        <img src="./images/wm.png" class="img-fluid mt-3" style="border-top-right-radius: 100px; border-bottom-left-radius: 100px;">
+    </div>
 
       </div>
 
@@ -151,7 +145,7 @@ footer{
       <ul style="list-style: none;">
 
         <li><a href="./index.html" style="color: #000000; text-decoration: none;">Home</a></li>
-        <li><a href="" style="color: #000000; text-decoration: none;">Products</a></li>
+        <li><a href="./products.html" style="color: #000000; text-decoration: none;">Products</a></li>
         <li><a href="" style="color: #000000; text-decoration: none;">Gifting</a></li>
         <li><a href="/about.html" style="color: #000000; text-decoration: none;">About</a></li>
         <li><a href="" style="color: #000000; text-decoration: none;">Profile</a></li>
@@ -186,22 +180,22 @@ footer{
   </div>
   
   <div class="row mt-2 pt-3" style="border-top: 3px solid black;">
-    <div class="col-md-2 ps-4">
-      <p>Web acccesibility</p>
-    </div>
-    <div class="col-md-2">
-      <p>Term of use</p>
-    </div>
-     <div class="col-md-2">
-      <p>Privacy Statement</p>
-    </div>
-     <div class="col-md-2">
-      <p>Contact Us</p>
-    </div>
-     <div class="col-md-3 text-end">
-      <p>@ 2024 Fragranzia Company. All rights reserved.</p>
-    </div>
+  <div class="col-md-2 ps-4">
+    <a href="/accessibility" style="text-decoration: none; color: black;">Web accessibility</a>
   </div>
+  <div class="col-md-2">
+    <a href="/terms" style="text-decoration: none; color: black;">Terms of use</a>
+  </div>
+  <div class="col-md-2">
+    <a href="/privacy" style="text-decoration: none; color: black;">Privacy Statement</a>
+  </div>
+  <div class="col-md-2">
+    <a href="/contact" style="text-decoration: none; color: black;">Contact Us</a>
+  </div>
+  <div class="col-md-3 text-end">
+    <p>@ 2024 Fragranzia Company. All rights reserved.</p>
+  </div>
+</div>
 </footer>
 
 

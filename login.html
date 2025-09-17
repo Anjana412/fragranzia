@@ -21,10 +21,25 @@
             border-bottom-right-radius: 200px;
 
         } 
+       .input-group,.input-group-text,input.form-control{
+            background-color: #d4d1d1;
+            border: none;
+       }
+       .input-group{
+            border-radius: 8px;
+       }
+       input.form-control:focus {
+            outline: none;
+            box-shadow: none;
+            background-color: #d4d1d1; 
+        }
+ 
+        
 @media (max-width: 768px) {
   .leftside {
     height: 250px;
     border-radius: 0;
+        background-position: top center;
   }
   .right{
      margin-top: 10px;
@@ -41,7 +56,7 @@
 
 
         <div class=" leftside d-flex flex-column justify-content-center text-center text-light ">
-            <h1 class="fw-bold">Wecome Back!</h1>
+            <h1 class="fw-bold">Welcome Back!</h1>
             <p>Glad to see you again! Access your account to explore more.</p>
         </div>
 
@@ -49,9 +64,9 @@
 
         <div class="col-md-6 d-flex justify-content-center align-items-center  right">
             <div class="form-container" >
-                <div class="signs d-flex flex-row gap-2">
-                    <button class="btn btn-outline-dark me-2"><img width="48" height="48" src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo"/>Google</button>
-                    <button class="btn btn-outline-dark"><img width="48" height="48" src="https://img.icons8.com/fluency/48/facebook-new.png" alt="facebook-new"/>Facebook</button>
+                <div class="d-flex flex-row gap-2">
+                    <button class="btn btn-outline-dark me-2" style="width: 160px;"><img src="./images/devicon_google.png" alt="google-logo" class="pe-2"/>Google</button>
+                    <button class="btn btn-outline-dark" style="width: 160px;"><img src="./images/eva_facebook-fill.png" alt="facebooklogo" class="pe-2" />Facebook</button>
                 </div>
 
                 <div style=" text-align: center; margin: 20px 0;">

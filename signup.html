@@ -21,6 +21,19 @@
             border-bottom-left-radius: 200px;
 
         } 
+
+        .input-group,.input-group-text,input.form-control{
+            background-color: #d4d1d1;
+            border: none;
+       }
+       .input-group{
+            border-radius: 8px;
+       }
+       input.form-control:focus {
+            outline: none;
+            box-shadow: none;
+            background-color: #d4d1d1; 
+        }
 @media (max-width: 768px) {
   .leftside {
     height: 250px;
@@ -49,9 +62,9 @@
 
         <div class="col-md-6 d-flex justify-content-center align-items-center  right">
             <div class="form-container" >
-                <div class="signs d-flex flex-row gap-2">
-                    <button class="btn btn-outline-dark me-2"><img width="48" height="48" src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo"/>Google</button>
-                    <button class="btn btn-outline-dark"><img width="48" height="48" src="https://img.icons8.com/fluency/48/facebook-new.png" alt="facebook-new"/>Facebook</button>
+                <div class="d-flex flex-row gap-2">
+                    <button class="btn btn-outline-dark me-2" style="width: 160px;"><img src="./images/devicon_google.png" alt="google-logo" class="pe-2"/>Google</button>
+                    <button class="btn btn-outline-dark" style="width: 160px;"><img src="./images/eva_facebook-fill.png" alt="facebooklogo" class="pe-2" />Facebook</button>
                 </div>
 
                 <div style=" text-align: center; margin: 20px 0;">
@@ -60,7 +73,7 @@
 
                 </div>
 
-                <form action="index.html" method="get">
+                <form action="login.html" method="get">
                     <div class="mb-3 input-group">
                      <span class="input-group-text"><i class="fa-regular fa-circle-user" style="color: #000000;"></i></span>
                     <input type="text" class="form-control text-dark" id="username" placeholder="Enter your username">
@@ -87,9 +100,9 @@
                         <label class="form-check-label"> Agree with<a href="#"> terms and condition</a></label>
                         </span>
                     </div>
-                    
-                    <button type="submit" class="btn text-light mt-2" style="width: 100%; background-color: rgb(11, 25, 80);">Sign up</button>
-
+                   
+                        <button type="submit" class="btn text-light mt-2" style="width: 100%; background-color: rgb(11, 25, 80);">Sign up</button>
+                 
                     <div class="mb-3 text-center mt-3">
                         <span>Already have an account?  <a href="login.html">log in</a> 
                         </span>
