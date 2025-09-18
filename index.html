@@ -152,7 +152,7 @@
 
   footer{
     background-color: rgb(58, 109, 146);
-    text-align: center;
+    text-align: start;
   }
 
   
@@ -212,40 +212,10 @@
   footer{
     text-align: center;
   }
-  .container-fluid,
-  .ps-5,
-  .px-5,
-  .p-5 {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-
-  .scroll-container {
-    padding-left: 0 !important;
-    margin-left: 1 !important;
-  }
-
-  .card-body {
-    padding: 0.2rem; /* Reduces the padding inside the card */
-  }
-
-  .card-body .card-text {
-    font-size: 0.75rem; /* Makes the paragraph text smaller */
-  }
-
-  .card-body .fw-bold {
-    font-size: 0.9rem; /* Makes the bold text smaller */
+  .seeall {
+    font-size: .8rem !important; /* Makes the "see all" link smaller */
   }
   
-  .card .btn {
-    font-size: 0.8rem; /* Makes the button text smaller */
-    padding: 0.3rem 0.5rem; /* Reduces the button size */
-  }
-  .card-img-top {
-    width: 60%; /* Makes the image smaller */
-    height: 20%;
-    margin: 0 auto; /* Centers the smaller image */
-  }
 }
 
     </style>
@@ -426,7 +396,7 @@
         </div>
         
         <div style="position: absolute; top: 45%; left: 8%; width: 90px; height: 90px;">
-          <img src="./images/Star 1.png" class="img-fluid" style="width: 100%; height: auto;">
+          <img src="./images/Star 1.png" class="img-fluid" style="max-width: 100%; height: auto;">
           <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-20deg);
                       font-size: 0.8rem; font-weight: 600; color: white; text-align: center;">
             Shop now
@@ -481,7 +451,7 @@
 </div>
 
 
-<div class="d-flex justify-content-between align-items-center mb-3 ms-1">
+<div class="d-flex justify-content-between align-items-center mb-3 ms-2">
   <h3 class="fw-bold mb-0">
     <span class="text-dark ps-5">Featured</span>
     <span style="color:navy">Collections</span>
@@ -505,8 +475,8 @@
       
       <div class="col-auto text-start pt-1 position-relative" style="min-width: 150px;"> 
         <img src="./images/Star 1.png" class="position-absolute top-0 start-0 m-3 z-1 img-fluid " 
-             style="width: 150px;padding-left: 20px;">
-             <div style="position: absolute; top: 14%; left: 23%; transform: translate(-50%, -50%) rotate(-20deg);
+             style="max-width: 130px;padding-left: 20px;">
+             <div style="position: absolute; top: 13%; left: 23%; transform: translate(-50%, -50%) rotate(-20deg);
                       font-size: 1.2rem; font-weight: 600; color: white; text-align: center; z-index: 1000;">
             New
           </div>
@@ -522,8 +492,8 @@
       <div class="col-auto text-start pt-1 position-relative" style="min-width: 150px;"> 
         <img src="./images/blackprfum.png" class="shape-image w-100 img-fluid thespray-image">
         <img src="./images/Star 1.png" class="position-absolute top-0 start-0 m-3 z-1 img-fluid" 
-             style="width: 150px;padding-left: 20px;">
-             <div style="position: absolute; top: 14%; left: 23%; transform: translate(-50%, -50%) rotate(-20deg);
+             style="max-width: 130px;padding-left: 20px;">
+             <div style="position: absolute; top: 13%; left: 23%; transform: translate(-50%, -50%) rotate(-20deg);
                       font-size: 1.2rem; font-weight: 600; color: white; text-align: center; z-index: 1000;">
             New
           </div>
@@ -538,8 +508,8 @@
 
       <div class="col-auto text-start pt-1 position-relative" style="min-width: 150px;"> 
         <img src="./images/Star 1.png" class="position-absolute top-0 start-0 m-3 z-1 img-fluid" 
-             style="width: 150px;padding-left: 20px;" >
-             <div style="position: absolute; top: 14%; left: 23%; transform: translate(-50%, -50%) rotate(-20deg);
+             style="max-width: 130px;padding-left: 20px;" >
+             <div style="position: absolute; top: 13%; left: 23%; transform: translate(-50%, -50%) rotate(-20deg);
                       font-size: 1.2rem; font-weight: 600; color: white; text-align: center; z-index: 1000;">
                       New
           </div>
@@ -555,8 +525,8 @@
 
       <div class="col-auto text-start pt-1 position-relative" style="min-width: 150px;"> 
         <img src="./images/Star 1.png" class="position-absolute top-0 start-0 m-3 z-1 img-fluid" 
-             style="width: 150px;padding-left: 20px;" >
-             <div style="position: absolute; top: 14%; left: 23%; transform: translate(-50%, -50%) rotate(-20deg);
+             style="max-width: 130px;padding-left: 20px;" >
+             <div style="position: absolute; top: 13%; left: 23%; transform: translate(-50%, -50%) rotate(-20deg);
                       font-size: 1.2rem; font-weight: 600; color: white; text-align: center; z-index: 1000;">
             New
           </div>
@@ -572,8 +542,8 @@
 
       <div class="col-auto text-start pt-1 position-relative" style="min-width: 150px;"> 
         <img src="./images/Star 1.png" class="position-absolute top-0 start-0 m-3 z-1 img-fluid" 
-             style="width: 150px;padding-left: 20px;">
-             <div style="position: absolute; top: 14%; left: 23%; transform: translate(-50%, -50%) rotate(-20deg);
+             style="max-width: 130px;padding-left: 20px;">
+             <div style="position: absolute; top: 13%; left: 23%; transform: translate(-50%, -50%) rotate(-20deg);
                       font-size: 1.2rem; font-weight: 600; color: white; text-align: center; z-index: 1000;">
             New
           </div>
@@ -627,9 +597,9 @@
   <div class="container-fluid px-3 mt-4">
     
     <div class="d-flex justify-content-between align-items-center mb-3">
-  <h3 class="fw-bold mb-5 p-5">Explore Categories</h3>
+  <h3 class="fw-bold mb-5 ms-2">Explore Categories</h3>
   <div class="me-5">
-      <a href="#" class="text-dark fs-4">see all</a>
+      <a href="#" class="seeall text-dark fs-4 ">see all</a>
     </div>
 </div>
     
@@ -767,7 +737,7 @@
         <div class="col-md-6 p-5 d-flex flex-column justify-content-center">
           <h2 class="fw-bold mb-3">Elegance in Every Bottle</h2>
           <p class="text-muted mb-4">Discover timeless fragrances crafted for every moment</p>
-                  <a href="#" class="btn  px-3 py-1 rounded-3" style="background-color: rgba(0, 53, 75, 1);color: white;">Shop Now</a>
+          <a href="#" class="btn  px-3 py-1 rounded-3" style="background-color: rgba(0, 53, 75, 1);color: white; max-width: 200px;">Shop Now</a>
         </div>
 
         <div class="col-md-6">

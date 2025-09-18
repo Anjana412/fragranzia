@@ -14,15 +14,6 @@
   box-shadow: none;
 }
 
-
-
-.leftimgs {
-  width: 100px;
-  height: auto;
-  cursor: pointer;
-}
-
-
 .perfume img {
   width: 100%;
   height: auto;
@@ -42,53 +33,45 @@
     align-items: flex-end;
 }
 
-.scroll-container {
-  display: flex;
-  overflow-x: auto;
-  gap: 2rem;
-  scroll-behavior: smooth;
-  padding: 0 3rem;
-}
 
-.scroll-container::-webkit-scrollbar {
-  display: none; 
-}
 
 .scroll-container {
-  -ms-overflow-style: none;  
-  scrollbar-width: none;     
-}
+      display: flex;
+      overflow-x: auto;
+      gap: 2rem;
+      scroll-behavior: smooth;
+      padding: 0 3rem;
+    }
 
-.thespray-image {
-  width: 70%;
-  height: auto;
-  border-top-left-radius: 70px;
-  border-bottom-right-radius: 80px;
-  box-shadow: 0 8px 8px 5px rgba(23, 19, 19, 0.25);
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-}
+    .scroll-container::-webkit-scrollbar {
+      display: none; 
+    }
 
-.thespray-image:hover {
-  border-top-right-radius: 30%;
-  border-bottom-left-radius: 30%;
-  border-top-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  transform: scale(1.07);
-  box-shadow: 0 5px 8px rgba(132, 118, 118, 0.25);
+    .scroll-container {
+      -ms-overflow-style: none;  
+      scrollbar-width: none;     
+    }
 
-}
+    .thespray-image {
+      width: 70%;
+      height: auto;
+      border-top-left-radius: 70px;
+      border-bottom-right-radius: 80px;
+      box-shadow: 0 8px 8px 5px rgba(23, 19, 19, 0.25);
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+    }
 
+    .thespray-image:hover {
+      border-top-right-radius: 30%;
+      border-bottom-left-radius: 30%;
+      border-top-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      transform: scale(1.07);
+      box-shadow: 0 5px 8px rgba(132, 118, 118, 0.25);
 
-.addto {
-    padding: 16px 20px; 
-    width: 100%;
-    max-width: 300px;
-    border-radius: 8px;
-    background-color: #00354B;
-    border-color: #00354B;
-    color: white;
-}
+    }
+
 
 
 footer{
@@ -207,7 +190,7 @@ footer{
                 <h1>Rs 899 <span class="strike" style="font-size: 20px; text-decoration: line-through;"> Rs 2000 </span><span class="text-success ps-1" style="font-size: 20px; "> 61% off</span></h1>
             </div>
             <div class="d-flex align-items-center mt-3 mb-3">
-                <div class="input-group" style="width: 130px; border: 3px solid black;">
+                <div class="input-group" style="max-width: 130px; border: 3px solid black; border-radius: 10px;">
                     <button class="btn btn-light">-</button>
                     <input type="text" class="form-control text-center" value="1">
                     <button class="btn btn-light">+</button>
