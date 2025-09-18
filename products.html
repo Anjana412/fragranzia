@@ -56,11 +56,8 @@
     scrollbar-width: none;
   }
   .navbar-nav {
-    text-align: center;
+    text-align: start;
   }
-  .navbar-nav .nav-link {
-            padding-left: 0 !important;
-        }
 
   footer{
     text-align: center;
@@ -75,57 +72,53 @@
 
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
-  <div class="container-fluid p-3">
-    <a class="navbar-brand fw-bold ps-md-5 pe-md-3" href="index.html" style="color: rgb(11, 60, 93); font-size: clamp(24px, 5vw, 30px);">Fragranzia</a>
+        <div class="container-fluid p-3">
+            <a class="navbar-brand fw-bold ps-md-5 pe-md-3" href="index.html" style="color: rgb(11, 60, 93); font-size: clamp(24px, 5vw, 30px);">Fragranzia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0" >
+                    <li class="nav-item me-3">
+                        <a class="nav-link fw-bold" style="color: rgba(6, 37, 74, 0.797);" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link fw-semibold " href="./products.html">Products</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link fw-semibold " href="#">Gifting</a>
+                    </li>
+                    <li class="nav-item me-1">
+                        <a class="nav-link fw-semibold" href="./about.html">About</a>
+                    </li>
+                </ul>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active fw-bold" style="color: rgba(6, 37, 74, 0.797);" aria-current="page" href="./index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fw-semibold ps-4" href="#">Products</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fw-semibold ps-4" href="#">Gifting</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fw-semibold ps-4" href="./about.html">About</a>
-        </li>
-      </ul>
-
-      <div class="d-flex align-items-center flex-nowrap ms-lg-4 mt-3 mt-lg-0">
-        <form class="d-flex me-2" style="max-width: 300px;">
-          <div class="position-relative w-100">
-            <i class="fa-solid fa-magnifying-glass position-absolute" style="top: 50%; left: 1rem; transform: translateY(-50%); color: #616466;"></i>
-            <input class="form-control ps-5 border text-secondary shadow-sm" style="border-radius: 30px;" type="search" placeholder="Search Here" aria-label="Search">
-          </div>
-        </form>
-
-        <a class="nav-link ms-2" href="./cart.html">
-          <span class="d-inline-flex align-items-center justify-content-center bg-light border shadow-sm rounded-circle" style="width: 40px; height: 40px;">
-            <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
-          </span>
-        </a>
-        <a class="nav-link ms-2" href="#">
-          <span class="d-inline-flex align-items-center justify-content-center bg-light border shadow-sm rounded-circle" style="width: 40px; height: 40px;">
-            <i class="fa-solid fa-bell" style="color: #000000;"></i>
-          </span>
-        </a>
-        <a class="nav-link ms-2" href="#">
-          <span class="d-inline-flex align-items-center justify-content-center bg-light border shadow-sm rounded-circle" style="width: 40px; height: 40px;">
-            <i class="fa-solid fa-user" style="color: #000000;"></i>
-          </span>
-        </a>
-      </div>
-    </div>
-  </div>
-</nav>
+                <div class="d-flex align-items-center flex-wrap  me-3 my-2 my-lg-0">
+                    <form class="d-flex me-2">
+                        <div class="position-relative">
+                            <i class="fa-solid fa-magnifying-glass position-absolute" style="top: 50%; left: 1rem; transform: translateY(-50%); color: #616466;"></i>
+                            <input class="form-control ps-5 border text-secondary shadow-sm" style="border-radius: 30px; max-width: 300px;" type="search" placeholder="Search Here" aria-label="Search">
+                        </div>
+                    </form>
+                    <a class="nav-link ms-2 " href="./cart.html">
+                        <span class="d-inline-flex align-items-center justify-content-center bg-light border shadow-sm rounded-circle" style="width: 40px; height: 40px;">
+                            <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+                        </span>
+                    </a>
+                    <a class="nav-link ms-2" href="#">
+                        <span class="d-inline-flex align-items-center justify-content-center bg-light border shadow-sm rounded-circle" style="width: 40px; height: 40px;">
+                            <i class="fa-solid fa-bell" style="color: #000000;"></i>
+                        </span>
+                    </a>
+                    <a class="nav-link ms-2" href="./signup.html">
+                        <span class="d-inline-flex align-items-center justify-content-center bg-light border shadow-sm rounded-circle" style="width: 40px; height: 40px;">
+                            <i class="fa-solid fa-user" style="color: #000000;"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
 
 
