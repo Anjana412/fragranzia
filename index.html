@@ -44,14 +44,14 @@
       z-index: 1;
       overflow: hidden;
     }
-      .black-spray-img {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      max-height: 100%; 
-      width: 50%;
-    }
+  .black-spray-img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-height: 100%; 
+  width: 50%;
+}
     .scroll-container {
       display: flex;
       overflow-x: auto;
@@ -212,12 +212,16 @@
   footer{
     text-align: center;
   }
-
-.card-responsive-image {
-    max-width: 50%;
-    left: 70%; /* Moves the image to the left */
+  .container-fluid,
+  .ps-5,
+  .px-5,
+  .p-5 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
-  
+  .scroll-container {
+    padding-left: 0 !important;
+  }
 }
 
     </style>
@@ -364,8 +368,8 @@
             Discover special deals<br>tailored just for you!
           </p>
         </div>
-        <div class=" d-flex justify-content-center">
-          <img src="./images/orngspray_c.png" class="card-responsive-image img-fluid P-2">
+        <div class="col-6 d-flex justify-content-center">
+          <img src="./images/orngspray_c.png" class="card-responsive-image img-fluid">
         </div>
       </div>
     </div>
@@ -475,7 +479,7 @@
        
     <div class="scroll-container d-flex flex-wrap flex-md-nowrap">
       
-      <div class="col-auto text-start pt-1 position-relative" style="min-width: 220px;"> 
+      <div class="col-auto text-start pt-1 position-relative" style="min-width: 150px;"> 
         <img src="./images/Star 1.png" class="position-absolute top-0 start-0 m-3 z-1 img-fluid " 
              style="width: 150px;padding-left: 20px;">
              <div style="position: absolute; top: 14%; left: 23%; transform: translate(-50%, -50%) rotate(-20deg);
@@ -491,7 +495,7 @@
         </a>
       </div>
 
-      <div class="col-auto text-start pt-1 position-relative" style="min-width: 220px;"> 
+      <div class="col-auto text-start pt-1 position-relative" style="min-width: 150px;"> 
         <img src="./images/blackprfum.png" class="shape-image w-100 img-fluid thespray-image">
         <img src="./images/Star 1.png" class="position-absolute top-0 start-0 m-3 z-1 img-fluid" 
              style="width: 150px;padding-left: 20px;">
@@ -508,7 +512,7 @@
         </button>
       </div>
 
-      <div class="col-auto text-start pt-1 position-relative" style="min-width: 220px;"> 
+      <div class="col-auto text-start pt-1 position-relative" style="min-width: 150px;"> 
         <img src="./images/Star 1.png" class="position-absolute top-0 start-0 m-3 z-1 img-fluid" 
              style="width: 150px;padding-left: 20px;" >
              <div style="position: absolute; top: 14%; left: 23%; transform: translate(-50%, -50%) rotate(-20deg);
@@ -525,7 +529,7 @@
         </button>
       </div>
 
-      <div class="col-auto text-start pt-1 position-relative" style="min-width: 220px;"> 
+      <div class="col-auto text-start pt-1 position-relative" style="min-width: 150px;"> 
         <img src="./images/Star 1.png" class="position-absolute top-0 start-0 m-3 z-1 img-fluid" 
              style="width: 150px;padding-left: 20px;" >
              <div style="position: absolute; top: 14%; left: 23%; transform: translate(-50%, -50%) rotate(-20deg);
@@ -542,7 +546,7 @@
         </button>
       </div>
 
-      <div class="col-auto text-start pt-1 position-relative" style="min-width: 220px;"> 
+      <div class="col-auto text-start pt-1 position-relative" style="min-width: 150px;"> 
         <img src="./images/Star 1.png" class="position-absolute top-0 start-0 m-3 z-1 img-fluid" 
              style="width: 150px;padding-left: 20px;">
              <div style="position: absolute; top: 14%; left: 23%; transform: translate(-50%, -50%) rotate(-20deg);
