@@ -52,52 +52,82 @@
   max-height: 100%; 
   width: 50%;
 }
-    .scroll-container {
-      display: flex;
-      overflow-x: auto;
-      gap: 2rem;
-      scroll-behavior: smooth;
-      padding: 0 3rem;
-    }
-
-    .scroll-container::-webkit-scrollbar {
-      display: none; 
-    }
-
-    .scroll-container {
-      -ms-overflow-style: none;  
-      scrollbar-width: none;     
-    }
-
-    .thespray-image {
-      width: 70%;
-      height: auto;
-      border-top-left-radius: 70px;
-      border-bottom-right-radius: 80px;
-      box-shadow: 0 8px 8px 5px rgba(23, 19, 19, 0.25);
-      transition: all 0.3s ease-in-out;
-      cursor: pointer;
-    }
-
-    .thespray-image:hover {
-      border-top-right-radius: 30%;
-      border-bottom-left-radius: 30%;
-      border-top-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      transform: scale(1.07);
-      box-shadow: 0 5px 8px rgba(132, 118, 118, 0.25);
-
-    }
 
 
+.featured-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 2%;
+}
 
-    .newarrival-row {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: nowrap;
-    }
+.featured-header h3 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
 
-  .newarrival-card { 
+.featured-buttons {
+  margin-left: auto; 
+  margin-right: 2%;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.featured-header button {
+  width: 40px;
+  height: 40px;
+  font-size: 1rem;
+}
+  
+
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 2rem;
+  scroll-behavior: smooth;
+  padding: 0 3rem;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; 
+}
+
+.scroll-container {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;     
+}
+
+.thespray-image {
+  width: 70%;
+  height: auto;
+  border-top-left-radius: 70px;
+  border-bottom-right-radius: 80px;
+  box-shadow: 0 8px 8px 5px rgba(23, 19, 19, 0.25);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.thespray-image:hover {
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  transform: scale(1.07);
+  box-shadow: 0 5px 8px rgba(132, 118, 118, 0.25);
+
+}
+
+
+
+.newarrival-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
+
+.newarrival-card { 
     flex: 1;
     position: relative;
     height: 70vh;
@@ -113,50 +143,49 @@
     transition: flex 0.5s ease, transform 0.4s ease;
   }
 
-    .newarrival-card:first-child {
+.newarrival-card:first-child {
       flex: 1.8;
-    }
+}
 
-    .newarrival-card .overlay {
+.newarrival-card .overlay {
       position: absolute;
       inset: 0;
       background: rgba(0,0,0,0.3);
       border-radius: 12px;
       transition: background 0.3s ease;
-    }
+}
 
-    .newarrival-text {
-      position: relative;
-      color: #fff;
-      font-size: 1.8rem;
-      font-weight: bold;
-      opacity: 0.9;
-      transform: rotate(-90deg); 
-      margin-bottom: 20%;   
-      margin-left:-3%;  
-    }
+.newarrival-text {
+  position: relative;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  opacity: 0.9;
+  transform: rotate(-90deg); 
+  margin-bottom: 20%;   
+  margin-left:-3%;  
+}
 
-    .newarrival-row:hover .newarrival-card {
-      flex: 0.9; 
-    }
+ .newarrival-row:hover .newarrival-card {
+   flex: 0.9; 
+ }
 
-    .newarrival-row:hover .newarrival-card:hover {
-      flex: 2; 
-      transform: scale(1.02); 
-    }
+ .newarrival-row:hover .newarrival-card:hover {
+    flex: 2; 
+    transform: scale(1.02); 
+  }
 
 
-    .newarrival-card:hover .newarrival-text {
-      opacity: 1;
-      padding-bottom: 40px;
-    }
+.newarrival-card:hover .newarrival-text {
+    opacity: 1;
+    padding-bottom: 40px;
+}
 
   footer{
     background-color: rgb(58, 109, 146);
     text-align: start;
   }
 
-  
 @media (max-width: 768px) {
   .navbar .d-flex {
     flex-direction: row;
@@ -168,6 +197,38 @@
   }
   .navbar-nav {
     text-align: start;
+  }
+  .featured-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-left: .5rem;
+
+  }
+
+  .featured-header h3 {
+    padding-left: 8%;
+    font-size: 1.2rem;
+    text-align: left;
+    width: 100%;  
+  }
+
+  .featured-header span {
+    display: block;
+    font-size: 1.2rem;
+  }
+  .featured-buttons {
+    margin-left: auto; 
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .featured-header button {
+    width: 32px;
+    height: 32px;
+    font-size: 0.8rem;
+    
+
   }
 .showcase-box {
     border-radius: 0;
@@ -450,7 +511,7 @@
 </div>
 
 
-<div class="d-flex justify-content-between align-items-center mb-3 ms-2">
+<!-- <div class="d-flex justify-content-between align-items-center mb-3 ms-2">
   <h3 class="fw-bold mb-0">
     <span class="text-dark ps-5">Featured</span>
     <span style="color:navy">Collections</span>
@@ -463,7 +524,24 @@
         <i class="fas fa-chevron-right"></i>
       </button>
     </div>
+</div> -->
+
+
+<div class="featured-header d-flex align-items-center mb-3 flex-wrap">
+  <h3 class="fw-bold ms-2 mb-3">
+    Featured <span style="color:navy">Collections</span>
+  </h3>
+  <div class="featured-buttons d-flex">
+    <button class="btn btn-light rounded-circle shadow me-2">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <button class="btn btn-light rounded-circle shadow">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
 </div>
+
+
 
 <div class="container-fluid mt-5">
   <div id="scrollWrapper" 
