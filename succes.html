@@ -20,20 +20,16 @@
       }
       @media (max-width: 768px) {
   .navbar .d-flex {
-            flex-direction: row;
-            flex-wrap: nowrap;
-            overflow-x: auto;
-            gap: 0.5rem;
-            margin-top: 10px;
-            scrollbar-width: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 0.5rem;
+    margin-top: 10px;
+    scrollbar-width: none;
   }
-        .navbar-nav {
-            text-align: center;
-        }
-
-        .navbar-nav .nav-link {
-            padding-left: 0 !important;
-        }
+  .navbar-nav {
+    text-align: start;
+  }
     }
     </style>
 
@@ -49,28 +45,28 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0" >
-                    <li class="nav-item">
-                        <a class="nav-link active fw-bold" style="color: rgba(6, 37, 74, 0.797);" aria-current="page" href="#">Home</a>
+                    <li class="nav-item me-3">
+                        <a class="nav-link fw-semibold"  href="./index.html">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-semibold ps-4" href="#">Products</a>
+                    <li class="nav-item me-3">
+                        <a class="nav-link fw-bold " style="color: rgba(6, 37, 74, 0.797);" href="./products.html">Products</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-semibold ps-4" href="#">Gifting</a>
+                    <li class="nav-item me-3">
+                        <a class="nav-link fw-semibold " href="#">Gifting</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-semibold ps-4" href="./about.html">About</a>
+                    <li class="nav-item me-1">
+                        <a class="nav-link fw-semibold" href="./about.html">About</a>
                     </li>
                 </ul>
 
-                <div class="d-flex align-items-center flex-wrap ms-4 me-3 my-2 my-lg-0">
+                <div class="d-flex align-items-center flex-wrap  me-3 my-2 my-lg-0">
                     <form class="d-flex me-2">
                         <div class="position-relative">
                             <i class="fa-solid fa-magnifying-glass position-absolute" style="top: 50%; left: 1rem; transform: translateY(-50%); color: #616466;"></i>
                             <input class="form-control ps-5 border text-secondary shadow-sm" style="border-radius: 30px; max-width: 300px;" type="search" placeholder="Search Here" aria-label="Search">
                         </div>
                     </form>
-                    <a class="nav-link ms-2 " href="#">
+                    <a class="nav-link ms-2 " href="./cart.html">
                         <span class="d-inline-flex align-items-center justify-content-center bg-light border shadow-sm rounded-circle" style="width: 40px; height: 40px;">
                             <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
                         </span>
@@ -80,7 +76,7 @@
                             <i class="fa-solid fa-bell" style="color: #000000;"></i>
                         </span>
                     </a>
-                    <a class="nav-link ms-2" href="#">
+                    <a class="nav-link ms-2" href="./signup.html">
                         <span class="d-inline-flex align-items-center justify-content-center bg-light border shadow-sm rounded-circle" style="width: 40px; height: 40px;">
                             <i class="fa-solid fa-user" style="color: #000000;"></i>
                         </span>
@@ -89,7 +85,6 @@
             </div>
         </div>
     </nav>
-
 <div class="bg" style="height: 800px; max-width: 1600px;">
 <div class="d-flex justify-content-center align-items-center vh-100"style="position: relative; top: -50px;">
   <div class="container">
