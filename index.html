@@ -42,8 +42,16 @@
       top: 0;
       left: 60%;
       z-index: 1;
+      overflow: hidden;
     }
-
+      .black-spray-img {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      max-height: 100%; 
+      width: 50%;
+    }
     .scroll-container {
       display: flex;
       overflow-x: auto;
@@ -146,6 +154,8 @@
     background-color: rgb(58, 109, 146);
     text-align: center;
   }
+
+  
 @media (max-width: 768px) {
   .navbar .d-flex {
     flex-direction: row;
@@ -202,6 +212,12 @@
   footer{
     text-align: center;
   }
+
+.card-responsive-image {
+    max-width: 50%;
+    left: 70%; /* Moves the image to the left */
+  }
+  
 }
 
     </style>
@@ -348,7 +364,7 @@
             Discover special deals<br>tailored just for you!
           </p>
         </div>
-        <div class="col-6 d-flex justify-content-center">
+        <div class=" d-flex justify-content-center">
           <img src="./images/orngspray_c.png" class="card-responsive-image img-fluid P-2">
         </div>
       </div>
@@ -366,7 +382,7 @@
           </p>
         </div>
         <div class="d-flex justify-content-center">
-          <img src="./images/blackspray.png" class="img-fluid" alt="Offer" style="max-height: 130px;margin-top: -20px;">
+          <img src="./images/blackspray.png" class="img-fluid black-spray-img" alt="Offer" style="max-height: 130px;margin-top: -20px;">
         </div>
       </div>
     </div>
